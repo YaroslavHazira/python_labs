@@ -1,13 +1,10 @@
 def getMin(arr):
-    count = arr[0]
+    min = arr[0]
     for i in arr:
-        if count > i:
-            count = i
-        else: 
-             count = count     
-    print(count)
+        if min > i:
+            min = i     
     
+    return min
 
-
-getMin([5098, 6890, 1357,10000])
-    
+minVal = getMin([55, 75, 25, 100])
+print(minVal)    
